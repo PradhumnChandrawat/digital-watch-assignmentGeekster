@@ -1,0 +1,85 @@
+body {
+  background: #1b1b1b;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  overflow: hidden;
+}
+
+.main_div {
+  text-align: center;
+  color: whitesmoke;
+  font-family: "Poppins", sans-serif;
+  font-weight: 200;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.time {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+}
+
+.hours,
+.minutes,
+.seconds {
+  background: #1f1f1f;
+  padding: 20px;
+  border-radius: 20px;
+  width: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+  animation: animate 1s linear infinite;
+}
+.seconds:hover {
+  background-color: gainsboro;
+  color: #1f1f1f;
+}
+.minutes:hover {
+  background-color: gainsboro;
+  color: #1f1f1f;
+}
+.hours:hover {
+  background-color: gainsboro;
+  color: #1f1f1f;
+}
+
+@keyframes animate {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.1);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+
+h1 {
+  font-size: 2.5em;
+}
+
+h4 {
+  font-size: 0.8em;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin-top: -10px;
+}
+
+.AM_PM {
+  position: absolute;
+  bottom: 30px;
+  right: 30px;
+  font-size: 1.5rem;
+  animation: animate 1s linear infinite;
+}
